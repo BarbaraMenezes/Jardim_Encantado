@@ -1,0 +1,74 @@
+/* CSS para o header */
+.header {
+    position: fixed; /* Faz o header fixo na tela */
+    top: 0; /* Alinha o header ao topo da tela */
+    left: 0; /* Alinha o header à esquerda da tela */
+    width: 100%; /* Faz o header ocupar toda a largura da tela */
+    text-align: center; /* Centraliza o texto dentro do header */
+    padding-top: 20px; /* Espaço superior para garantir que o título não fique colado no topo */
+    background-color: #fff; /* Adiciona um fundo branco ao header para que o texto não se perca */
+    z-index: 1; /* Garante que o header fique acima dos outros elementos */
+}
+
+/* CSS para o título dentro do header */
+.header h1 {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    margin-bottom: 80px; /* Adiciona espaço abaixo do título para os cards */
+    margin-top: 80px;
+    color: #ee9b98;
+}
+
+/* CSS para o container dos cards */
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 100px; /* Adiciona um espaço para garantir que o conteúdo não sobreponha o header fixo */
+}
+
+/* CSS para o grid de cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-top: 150px;
+}
+
+/* CSS para o botão */
+.container button {
+    background-color: #0275d8;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    bottom: 16px;
+    right: 24px;
+    transition: all 0.1s linear 0.1s;
+}
+
+.container button:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
+    transform: scale(1.1);
+}
+
+/* CSS para a imagem do header (direita) */
+.header-image {
+    position: fixed; /* Para posicionar a imagem de forma fixa na tela */
+    top: 20px; /* Distância do topo da tela */
+    right: 0; /* Alinha a imagem à direita da tela */
+    height: 350px; /* Ajuste a altura da imagem conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+    z-index: 0; /* Garante que a imagem fique atrás do texto */
+}
+
+/* CSS para a imagem do header (esquerda) */
+.header-image-left {
+    position: fixed; /* Para posicionar a imagem de forma fixa na tela */
+    top: 20px; /* Distância do topo da tela */
+    left: 0; /* Alinha a imagem à esquerda da tela */
+    height: 350px; /* Ajuste a altura da imagem conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+    z-index: 0; /* Garante que a imagem fique atrás do texto */
+}
